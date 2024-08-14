@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#container {
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.slot-machine {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    width: 100px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    position: relative;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.spinning .col {
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
