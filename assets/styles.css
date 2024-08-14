@@ -1,13 +1,30 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --item-height: 100px;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #444;
+    margin: 0;
 }
 
 #container {
+    background-color: #fd9b03;
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -46,4 +63,29 @@ body {
 @keyframes spin {
     0% { transform: translateY(0); }
     100% { transform: translateY(-100%); }
+}
+
+/* Estilos adicionais para um visual extravagante */
+#container {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    border: 5px solid #ffcc00;
+    border-radius: 15px;
+}
+
+.controls input, .controls button {
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.slot-machine .col {
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+}
+
+.slot-machine .icon img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
