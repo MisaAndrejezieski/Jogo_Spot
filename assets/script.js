@@ -65,7 +65,7 @@ function setInitialItems() {
 
         for (let x = 0; x < amountOfItems; x++) {
             let icon = getRandomIcon();
-            let item = '<div class="icon" data-item="' + icon + '"><img src="assets/items/' + icon + '.png"></div>';
+            let item = '<div class="icon" data-item="' + icon + '"><img src="items/' + icon + '.png"></div>';
             elms += item;
 
             if (x < 3) firstThreeElms += item;
